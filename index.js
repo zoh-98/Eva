@@ -240,7 +240,7 @@ const DB_by_allou = await require('./DB/controller/index.js')(loginApiData);
     global.config.version = '1.2.14'
     global.client.timeStart = new Date().getTime(),
       function() {
-        const listCommand = readdirSync(global.client.mainPath + '/EvaScripts/commands').filter(command => command.endsWith('.js') && !command.includes('example') && !global.config.commandDisabled.includes(command));
+        const listCommand = readdirSync(global.client.mainPath + '/Scripts/commands').filter(command => command.endsWith('.js') && !command.includes('example') && !global.config.commandDisabled.includes(command));
         for (const command of listCommand) {
           try {
             var module = require(global.client.mainPath + '/EvaScripts/commands/' + command);

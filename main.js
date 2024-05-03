@@ -3,12 +3,6 @@ const chalk = require("chalk");
 const cv = chalk.bold.hex("#1390f0");
 const gradient = require("gradient-string")
 const logo = `
-███████ ██    ██  █████
-██      ██    ██ ██   ██  EVA AI BOT
-█████    ██  ██  ███████     FOR
-██        ████   ██   ██  MESSENGER 
-███████    ██    ██   ██
-
              ██████   █████   █████
  BY MOHAMMAD ██   ██ ██   ██    ██
     RYAEN    ██████  ██   ██    ██
@@ -98,7 +92,7 @@ class EvaA {
     };
     this.child = spawn(
       "node",
-      [ "--trace-deprecation", "--trace-warnings", "--async-stack-traces", "Eva.js"],
+      [ "--trace-deprecation", "--trace-warnings", "--async-stack-traces", "index.js"],
       options
     );
     this.child.on("close", (codeExit) => {
