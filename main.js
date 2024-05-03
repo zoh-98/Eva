@@ -92,7 +92,7 @@ class EvaA {
     };
     this.child = spawn(
       "node",
-      [ "--trace-deprecation", "--trace-warnings", "--async-stack-traces", "Eva.js"],
+      [ "--trace-deprecation", "--trace-warnings", "--async-stack-traces", "index.js"],
       options
     );
     this.child.on("close", (codeExit) => {
