@@ -3,12 +3,6 @@ const chalk = require("chalk");
 const cv = chalk.bold.hex("#1390f0");
 const gradient = require("gradient-string")
 const logo = `
-███████ ██    ██  █████
-██      ██    ██ ██   ██  EVA AI BOT
-█████    ██  ██  ███████     FOR
-██        ████   ██   ██  MESSENGER 
-███████    ██    ██   ██
-
              ██████   █████   █████
  BY MOHAMMAD ██   ██ ██   ██    ██
     RYAEN    ██████  ██   ██    ██
